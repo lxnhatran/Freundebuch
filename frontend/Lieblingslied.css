@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-header {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+.custom-textfield .mdl-textfield__input {
+    width: 100%;
+    height: 150px;
+    font-size: 20px;
+}
+
+.custom-button {
+    background-color: #e91e63;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.custom-button.mdl-button--accent {
+    background-color: #ff4081;
+}
+
+.message-display {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: #e91e63;
+    border-radius: 8px;
+    word-wrap: break-word;
+}

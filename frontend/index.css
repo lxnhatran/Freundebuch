@@ -1,0 +1,155 @@
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2; /* Über Inhaltsbereich legen */
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, rgba(255, 209, 220, 0.5) 50%, rgba(255, 232, 231, 0.5) 50%); /* Sehr weicher Farbverlauf */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Inhalte am linken Rand ausrichten */
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Relative Positionierung für die Positionierung des Hintergrundbilds */
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ff94ac;
+    font-size: 50px;
+    white-space: nowrap; /* Verhindert Zeilenumbrüche */
+    overflow: hidden; /* Verhindert Textüberlauf */
+    text-overflow: ellipsis; /* Fügt Auslassungszeichen hinzu */
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 40px; /* Unterer Abstand */
+    font-family: 'Arial', sans-serif;
+    color: #ff94ac;
+    font-size: 25px;
+}
+
+p.small {
+    font-size: 10px;
+    margin-bottom: 20px; /* Negative Margin, um den Text höher zu positionieren */
+}
+
+.heart-button {
+    background-color: #ff91a4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 100px;
+    cursor: pointer; /* Zeiger als Zeigertyp */
+    transition: background-color 0.3s;
+    text-decoration: none;
+    outline: none;
+    z-index: 1; /* Button über das Hintergrundbild legen */
+}
+
+.heart-button:hover {
+    background-color: #fc4c4e;
+}
+
+.heart-button.small-link1,
+.heart-button.small-link2,
+.heart-button.small-link3 {
+    font-size: 17px;
+    padding: 10px 30px;
+}
+
+.heart-button.small-link1 {
+    margin-right: auto;
+}
+
+.heart-button.small-link2 {
+    margin-right: 1470px; /* Achte darauf, dass diese Zahl für dein Layout passend ist */
+}
+
+.heart-button.small-link3 {
+    margin-left: auto;
+}
+
+.heart-button.large-link {
+    font-size: 20px;
+    padding: 15px 45px;
+}
+
+.bounty-link {
+    margin-right: auto; /* Verschiebt den "Bounty" Link nach links */
+    margin-left: 150px; /* Gibt einen Abstand nach rechts, damit er nicht zu nah am Rand ist */
+}
+
+.heart-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.content {
+    display: flex;
+}
+
+.content-left {
+    margin-left: 10%;
+}
+
+.content-right {
+    width: 50%;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.content-right img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.Bildes {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 100px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Keine Verschiebung */
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Media Query für kleine Geräte */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Media Query für mittlere Geräte */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Media Query für große Geräte */
+}

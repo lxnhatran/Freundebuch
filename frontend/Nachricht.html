@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachricht an Linh</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="custom-header">Schreibe eine Nachricht an Linh</div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label custom-textfield">
+            <textarea class="mdl-textfield__input" type="text" id="message"></textarea>
+            <label class="mdl-textfield__label" for="message">Nachricht...</label>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored custom-button" type="button" onclick="saveMessage()">
+            Nachricht speichern
+        </button>
+        <div id="messages-container" class="messages-container"></div>
+    </div>
+</body>
+</html>

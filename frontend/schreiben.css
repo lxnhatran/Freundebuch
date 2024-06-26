@@ -1,0 +1,140 @@
+body {
+    background-color: #ffe6f0; /* Sehr helles Rosa */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ff94ac; /* Rosa Farbcode */
+    }
+    
+    .top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
+    padding: 15px 10px;
+    }
+    
+    .custom-header, .custom-drawer {
+    background-color: #ffb6c1 !important; /* Hellrosa für Header und Drawer */
+    }
+    
+    .mdl-layout__header-row .mdl-layout-title,
+    .mdl-navigation__link {
+    color: #ffffff !important; /* Weiße Schriftfarbe für Titel und Links */
+    }
+    
+    .page-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Änderung: Elemente links ausrichten */
+    }
+    
+    .heart-button {
+    background-color: #ff91a4; /* Rosa Hintergrund */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 100px;
+    cursor: pointer; /* Zeiger als Zeigertyp */
+    transition: background-color 0.3s;
+    text-decoration: none;
+    outline: none;
+    }
+    
+    .heart-button:hover {
+    background-color: #fc4c4e; /* Dunkelrosa bei Hover */
+    }
+    
+    .heart-button.small-link1,
+    .heart-button.small-link2,
+    .heart-button.small-link3 {
+    font-size: 17px;
+    padding: 10px 30px;
+    }
+    
+    .heart-button.large-link {
+    font-size: 20px;
+    padding: 15px 45px;
+    }
+    
+    .container {
+    width: 100%; /* Vollständige Breite des Viewports */
+    max-width: 1200px; /* Maximale Breite des Containers */
+    margin: 20px auto; /* Zentriert den Container und fügt Abstand hinzu */
+    padding: 20px;
+    text-align: center; /* Zentriert den Inhalt horizontal */
+    }
+    
+    .image-container {
+    text-align: center; /* Zentriert die Inhalte horizontal */
+    margin-bottom: 20px; /* Erhöhter Abstand nach unten */
+    }
+    
+    .image-controls {
+    display: flex; /* Elemente in einer Zeile anordnen */
+    justify-content: center; /* Buttons zentrieren */
+    gap: 10px; /* Abstand zwischen Buttons */
+    margin-bottom: 10px; /* Abstand unter den Buttons */
+    }
+    
+    #uploaded-image {
+    max-width: 100%; /* Maximale Breite des Bildes */
+    max-height: 200px; /* Maximale Höhe des Bildes */
+    display: none; /* Standardmäßig ausblenden */
+    margin-bottom: 10px; /* Abstand nach unten */
+    }
+    
+    .custom-textfield .mdl-textfield__label:after {
+    background-color: #e91e63; /* Pink für das schwebende Label */
+    }
+    
+    .custom-textfield .mdl-textfield__input:focus ~ .mdl-textfield__label:after,
+    .custom-textfield .mdl-textfield__input:not(:focus):valid ~ .mdl-textfield__label:after {
+    background-color: #e91e63; /* Pink bei Fokus oder gültigem Zustand */
+    }
+    
+    .custom-textfield .mdl-textfield__input:focus {
+    border-bottom: 1px solid #e91e63; /* Pinker unterer Rand bei Fokus */
+    }
+    
+    .custom-textfield.is-focused .mdl-textfield__label,
+    .custom-textfield.is-dirty .mdl-textfield__label {
+    color: #e91e63; /* Pink für das schwebende Label selbst */
+    }
+    
+    .custom-textfield.is-focused .mdl-textfield__input {
+    border-bottom-color: #e91e63; /* Pinker unterer Rand bei Fokus */
+    }
+    
+    .mdl-data-table__cell--non-numeric button {
+    background-color: #e91e63; /* Pink für die Schaltfläche */
+    color: #fff; /* Weiße Schriftfarbe */
+    padding: 8px 16px; /* Innenabstand der Schaltfläche */
+    border: none; /* Kein Rahmen */
+    cursor: pointer; /* Zeigerzeiger */
+    border-radius: 4px; /* Abrundung der Ecken */
+    }
+    
+    .mdl-data-table__cell--non-numeric button:hover {
+    background-color: #d81b60; /* Dunkleres Pink beim Hovern */
+    }
+    
+    .next-page-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #ff4081; /* Pinker Hintergrund */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto; /* Zentriert den Button horizontal */
+    }
+    
+    .next-page-button:hover {
+    background-color: #f50057; /* Dunkleres Pink bei Hover */
+    }
